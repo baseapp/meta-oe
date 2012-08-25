@@ -9,11 +9,11 @@ ARM_INSTRUCTION_SET = "arm"
 
 DEPENDS = "python-numpy v4l-utils libav gtk+ libtool swig swig-native python jpeg bzip2 zlib libpng tiff glib-2.0"
 
-SRC_URI = "svn://code.opencv.org/svn/opencv/branches/2.4;module=opencv;proto=http \
+SRC_URI  = "git://github.com/Itseez/opencv.git;protocol=git;branch=2.4 \
            file://0001-Fix-CMakeLists.txt-numpy-detection.patch \
           "
 
-SRCREV = "8988"
+SRCREV_pn-${PN} = "cdbda45125ac1b5b5afb724c76469ed7df8f2637"
 
 PV = "2.4.2"
 
